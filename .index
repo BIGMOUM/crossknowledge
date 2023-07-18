@@ -1,0 +1,977 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="content-language" content="fr"/>
+		<title>CrossKnowledge Learning Suite</title>
+		  <link rel="icon" type="image/png" href="https://honoris-onlineacademy.eu.crossknowledge.com/images/favicon.png" />
+<script type="text/javascript">
+  window.jqueryMigrateLoggingEnabled = false;
+  window.jsErrorLoggingEnabled = false;
+  window.loggingModule = "backoffice";
+</script>
+<script src="https://ckls-assets.eu.crossknowledge.com/assets/js/CoreLogError.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/js/CoreAjaxLogoutFilter.js?v=88142058a66"></script>
+    <script type="text/javascript">
+      var loginPageUrl = "https://honoris-onlineacademy.eu.crossknowledge.com/admin/login.php";
+      new AjaxLogoutFilter();
+    </script>
+    <link rel="stylesheet" href="https://ckls-assets.eu.crossknowledge.com/libs/extjs/resources/ext-theme-gray/ext-theme-gray-all.css?v=88142058a66"/>
+    <link rel="stylesheet" href="https://ckls-assets.eu.crossknowledge.com/assets/video.js/video-js.min.css?v=88142058a66"/>
+    <link rel="stylesheet" href="https://ckls-assets.eu.crossknowledge.com/assets/videojs-resolution-switcher/videojs-resolution-switcher.css?v=88142058a66"/>
+    <link rel="stylesheet" href="https://ckls-assets.eu.crossknowledge.com/css/FCKEditor.css?v=88142058a66"/>
+    <link rel="stylesheet" href="https://ckls-assets.eu.crossknowledge.com/assets/css/legacy-bo-page.css?v=88142058a66"/>
+<script>
+    themeManagerUrl = "https://honoris-onlineacademy.eu.crossknowledge.com/";
+    themeManagerWorkspace = "DesignAdmin";
+    themeManagerThousandSeparator = " ";
+    themeManagerDecimalSeparator = ",";
+    themeManagerDateFormatJS = "%d/%m/%Y";
+    themeManagerLongDateFormat = "l, F j, Y";
+    themeManagerLongDateFormat = "l, F j, Y";
+    themeManagerTimeFormat = "H\hi";
+    themeManagerFirstDayOfWeek = "1";
+    themeManagerAllowedExtensions = "doc,docx,xls,xlsx,ppt,pptx,txt,css,pdf,gif,jpg,jpeg,png,psd,zip,gz,tgz,rar,7z,mp3,avi,odt,odp,ods";
+    themeManagerFirstDayOfWeek = "1";
+</script>
+
+
+    <script id="jsPlaceholderDynatrace"></script><script type="text/javascript" src="/ruxitagentjs_ICA2NVfqru_10269230615181503.js" data-dtconfig="rid=RID_436091874|rpid=1081330481|domain=crossknowledge.com|reportUrl=/rb_bf67049ldu|app=43f68c4e31f70632|ssc=1|cssm=l|featureHash=ICA2NVfqru|vcv=2|rdnt=2|uxrgce=1|bp=3|cuc=7pfhlik4|mel=100000|dpvc=1|ssv=4|lastModification=1689174720160|tp=500,50,0,1|agentUri=/ruxitagentjs_ICA2NVfqru_10269230615181503.js"></script>
+
+    <script src="https://honoris-onlineacademy.eu.crossknowledge.com/site/assets/js/translations.fr-FR.88142058a66.js"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/js/extjs.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/libs/extjs/locale/ext-lang-fr.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/video.js/video.min.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/videojs-resolution-switcher/videojs-resolution-switcher.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/js/vendor-bo.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/js/javascript-bo-legacy-page.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/js/BoHeader.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/js/themeManagerHeader.js?v=88142058a66"></script>
+
+
+<script type="text/javascript">
+
+
+    monthArray = ['janvier', 'février', 'mars', 'avril', 'Mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+    monthArrayShort = ['jan', 'fev', 'mar', 'avr', 'Mai', 'jui', 'juil', 'aou', 'sep', 'oct', 'nov', 'déc'];
+    dayArray = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'];
+    weekString = 'S';
+    todayString = 'Aujourd\'hui';
+    languageCode = 'fr';
+    dateFormat = "dd/mm/yyyy";
+
+</script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function (event) {
+        var adobeAnalyticsProperties = '{"type":"adobe-analytics","scriptUrl":"\/\/assets.adobedtm.com\/59640f9fa510\/f174bdf3096b\/launch-c239e7226acc.min.js","additionalCSPHosts":["*.112.2o7.net","assets.adobedtm.com"]}';
+        adobeAnalyticsProperties = JSON.parse(adobeAnalyticsProperties);
+        window.InternalWebAnalyticsFactory(adobeAnalyticsProperties);
+      });
+    </script>
+    <script>
+      (function(apiKey){
+        (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+          v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+            o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+          y=e.createElement(n);y.async=!0;y.src='https://cdn.eu.pendo.io/agent/static/'+apiKey+'/pendo.js';
+          z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+        // Call this whenever information about your visitors becomes available
+        // Please use Strings, Numbers, or Bools for value types.
+        visitor_data = {
+          id: '7ADCBF93-BCF0-B407-CF59-519CCE3B8DA9',   // Required if user is logged in
+          user_language: 'fr_FR', // User preferred language
+          isNewCoreProductEnabled: 0,
+          // email:        // Recommended if using Pendo Feedback, or NPS Email
+          // full_name:    // Recommended if using Pendo Feedback
+          // role:         // Optional
+
+          // You can add any additional visitor level key-values here,
+          // as long as it's not one of the above reserved names.
+        };
+        pendo.initialize({
+          visitor: visitor_data,
+
+          account: {
+            id: 'HONORIS', // Required if using Pendo Feedback
+            // name:         // Optional
+            // is_paying:    // Recommended if using Pendo Feedback
+            // monthly_value:// Recommended if using Pendo Feedback
+            // planLevel:    // Optional
+            // planPrice:    // Optional
+            // creationDate: // Optional
+
+            // You can add any additional account level key-values here,
+            // as long as it's not one of the above reserved names.
+          }
+        });
+      })('09cc0ea7-0d63-4915-5169-a04ae178d9f4');
+    </script>
+
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/js/highcharts.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/js/chart/class/chart.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/js/chart/class/pie.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/js/chart/class/area.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/js/chart/widget/trainingTimePerUser.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/js/chart/widget/trainingTimePie.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/js/build/BO/Menu.js?v=88142058a66"></script>
+
+
+<script src="https://ckls-assets.eu.crossknowledge.com/bundles/fosjsrouting/js/router.js?v=88142058a66"></script>
+    <script src="https://ckls-assets.eu.crossknowledge.com/assets/js/fos_js_routes.js?v=88142058a66"></script>
+
+    </head>
+	<body  id="home"  onload="putFocusToFirstElement()" onunload="onWindowUnload()">
+	<img id="AjaxSpinner" src="https://ckls-assets.eu.crossknowledge.com/images/spinner.gif?v=88142058a66" style="position:absolute; left:400px; top: 300px; display: none">
+<div class="header clear_fix"><div class="left_spacer"><div class="logo"></div></div><div id="menu_container" class="clear_fix"><a href="https://honoris-onlineacademy.eu.crossknowledge.com/switch_workspace.php?workspace=DesignAdmin" class="selected"><div class="workspace_selector DesignAdmin"><div class="workspace_selector_text"><h2>Concevoir & Administrer</h2></div></div></a><a href="https://honoris-onlineacademy.eu.crossknowledge.com/switch_workspace.php?workspace=ReportingWorkspace" class=""><div class="workspace_selector ReportingWorkspace"><div class="workspace_selector_text"><h2>Analyser</h2><h3>Activité & reporting</h3></div></div></a></div><div id="help_container"><a href="https://honoris-onlineacademy.eu.crossknowledge.com/home.php">?</a></div><div id="logo_welcome_container"><div class="welcome"><div class="UserProfileCard">
+    <div id="UserProfileCard-header" class="UserProfileCard-header">
+        <label class="UserProfileCard-checkboxLabel" for="userProfileCheckbox">
+                        zakaria diya <span class="UserProfileCard-separator"></span>
+            <img class="UserProfileCard-userPicture" src="https://ckls-cdn-eu.crossknowledge.com/user/thumbnail/default/zd-C0DD58-w30h30.png?Expires=1689678194&amp;Signature=KuWxbYyqFUuUrSMqJQWpKUDV37gilI7gECkGN3OtAvuHMNzxNYFJI3JPkOD49s~Dt5--hVF8q~TJnuLD3-jKX0cPfIH7trnaHszDm3-XGIuqvuc4QBUWd52g2ep6S~zZrUqJlWTVwQzx05I~UrbvivTfSIRkMRL1Mjm6sXyrRoI_&amp;Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q" />
+            <span class="fa fa-angle-down"></span>
+        </label>
+                    <div class="UserProfileCard-badge">1</div>
+                <div id="UserProfilePanel" class="UserProfilePanel panel panel-default">
+            <div class="UserProfilePanel-header panel-heading">
+                <div class="UserProfilePanel-element">
+                    <a href="https://honoris-onlineacademy.eu.crossknowledge.com/user_record.php?EQSUser_ID=182">Mon profil</a>
+                </div>
+                                    <div class="UserProfilePanel-element">
+                        <a href="/administration/ckfeedback/redirect" target="_blank">Nouveautés</a>
+                                                    <div class="UserProfilePanel-badge">1</div>
+                                            </div>
+                                                    <div class="UserProfilePanel-element">
+                        <a href="/administration/mysupport/redirect" target="_blank">Support</a>
+                    </div>
+                                                                    <div class="UserProfilePanel-element">
+                        <a href="https://academy.lms.crossknowledge.com" target="_blank">
+                            Zone de formation</a>
+                    </div>
+                            </div>
+            <div class="UserProfilePanel-body panel-body">
+                <div class="UserProfilePanel-element UserProfilePanel-element--first">
+                    Français
+                </div>
+                                                            <div class="UserProfilePanel-element">
+                            <a href="/administration/user/language/switch/en-GB">English (United Kingdom)</a>
+                        </div>
+                                                                                <div class="UserProfilePanel-element">
+                            <a href="/administration/user/language/switch/en-US">English (United States)</a>
+                        </div>
+                                                                                    </div>
+            <div class="UserProfilePanel-footer panel-footer">
+                <div class="UserProfilePanel-element">
+                    <a href="https://honoris-onlineacademy.eu.crossknowledge.com/authentication/logout.php">Déconnexion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div></div></div><table class="content-table">
+    <tbody>
+        <tr>
+            <td class="side-container">
+                <!-- left navigation panel -->
+                <div id="tabs_navigation" class="tabs_navigation"></div>
+                <script>
+
+Ext.onReady(function() {
+		Ext.create('BO.Menu', {tabMenuData: [{"label":"Accueil","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/workspaces\/design_admin\/dashboard.php","cssClass":"","activeCls":"x-menu-item-active","labelNew":"","menu":{"hasSubCategories":false,"items":[]}},{"label":"Formations","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_list.php","cssClass":"","activeCls":"","labelNew":"","menu":{"hasSubCategories":false,"items":[{"label":"Rechercher une formation","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_list.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Rechercher une session","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/sessions\/trainingsession_list.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Cr\u00e9er une formation","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/administration\/training\/wizard\/modality","activeCls":"","items":[],"hasSubCategories":null},{"label":"G\u00e9rer le catalogue","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_catalog.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Traitement group\u00e9","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/workspaces\/catalogue\/training\/batch_processing.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Mod\u00e8les d'e-mails","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/mailing_rules_interface\/mailing_rules_template_list.php","activeCls":"","items":[],"hasSubCategories":null}]}},{"label":"Apprenants","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_list.php","cssClass":"","activeCls":"","labelNew":"","menu":{"hasSubCategories":false,"items":[{"label":"Rechercher un apprenant","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_list.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Ajouter un apprenant","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_new.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"G\u00e9rer les entit\u00e9s","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/group_list.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Administrer les apprenants","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/administration\/learners\/actions","activeCls":"","items":[],"hasSubCategories":null},{"label":"G\u00e9rer les groupes","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/smartgroups\/smartgroup_list.php","activeCls":"","items":[],"hasSubCategories":null}]}},{"label":"Contenus","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/resource_list.php","cssClass":"","activeCls":"","labelNew":"","menu":{"hasSubCategories":false,"items":[{"label":"Rechercher un contenu p\u00e9dagogique","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/resource_list.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Ajouter un contenu p\u00e9dagogique","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/resource_import\/add_contents.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"G\u00e9rer les m\u00e9ta-donn\u00e9es","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/metadata.php","activeCls":"","items":[],"hasSubCategories":null}]}},{"label":"Mes discussions","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/miniforum\/leaderboards.php","cssClass":"","activeCls":"","labelNew":"","menu":{"hasSubCategories":false,"items":[{"label":"Meilleurs contributeurs","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/miniforum\/leaderboards.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Derni\u00e8res discussions","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/admin\/my_discussions.php","activeCls":"","items":[],"hasSubCategories":null},{"label":"Mod\u00e9ration des discussions","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/miniforum\/moderation_panel.php","activeCls":"","items":[],"hasSubCategories":null}]}}], recentMenuData: {"recentLabel":"Pages r\u00e9centes","recentItems":[{"type":"sessions_courses","title":"Sessions et formations","emptyMessage":"Aucune formation ou session trouv\u00e9e","items":[{"title":"Get Your Team Working Together","type":"Blended\u02e3","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=23","sessions":[{"id":2779,"title":"UMC_2A_MGE_2023\/2024","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/sessions\/trainingsession_record.php?trainingsession_id=2779","trainingId":23,"trainingTitle":"Get Your Team Working Together","trainingType":"Blended\u02e3","trainingHref":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=23"},{"id":2784,"title":"UMC_M1_MKTG_2023\/2024","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/sessions\/trainingsession_record.php?trainingsession_id=2784","trainingId":23,"trainingTitle":"Get Your Team Working Together","trainingType":"Blended\u02e3","trainingHref":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=23"}]},{"title":"Improve Your Personal Effectiveness","type":"Blended\u02e3","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=21","sessions":[{"id":2795,"title":"UMC_M1_MKTG_2023\/2024","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/sessions\/trainingsession_record.php?trainingsession_id=2795","trainingId":21,"trainingTitle":"Improve Your Personal Effectiveness","trainingType":"Blended\u02e3","trainingHref":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=21"}]},{"title":"Harness Emotions to Be More Effective","type":"Blended\u02e3","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=14","sessions":[{"id":2739,"title":"UMC_M1_CCA_2023\/2024","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/sessions\/trainingsession_record.php?trainingsession_id=2739","trainingId":14,"trainingTitle":"Harness Emotions to Be More Effective","trainingType":"Blended\u02e3","trainingHref":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=14"}]},{"title":"Unlock Your Creative Potential Now","type":"Blended\u02e3","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/catalog\/training_record.php?training_id=12","sessions":[]}]},{"type":"groups_and_entities","items":[{"type":"groups","title":"Groupes","items":[{"id":410,"title":"UMC_2023-2024","count":"263 apprenants","desc":"","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/smartgroups\/smartgroup_edit.php?smartgroup_id=410"},{"id":421,"title":"UMC_M1_MKTG_2023\/2024","count":"19 apprenants","desc":"","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/smartgroups\/smartgroup_edit.php?smartgroup_id=421"},{"id":420,"title":"UMC_M1_LOG_2023\/2024","count":"17 apprenants","desc":"","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/smartgroups\/smartgroup_edit.php?smartgroup_id=420"}]}]},{"type":"learners","title":"Apprenants","emptyMessage":"Aucun apprenant trouv\u00e9","items":[{"id":13430,"title":"Kawtar Lakhbiza","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/KL-FCD25F-w40h40.png?Expires=1689678194&Signature=mHU7BW95T5EFLbcAr6BqoJEDhQhquEFoUxI92FEukwPa~H7NGjOzKCe5pWMZPJ5vgXstZ~7TV~yV1hnAPVr1~0~LKRscs4d1B4G1JR5ZXABmfbRs0hqWT0QMQN2c0AQAUADMRivrKQB9VcfvYdtD81xOAfdaCdZUsI4tzsrlCLk_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=13430"},{"id":27298,"title":"YASMINE OLLOMO ANDREA","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/YO-FFA263-w40h40.png?Expires=1689678194&Signature=qHPKno55xDPhsfRR4fmZ38rnLyqhTNUssPiMHahkRWNKKORu6ff-sdiiBYQi4c9UWQLc42PvCP2L8WBXjz6Wb1MXJWfTlSCdptf2T0OeTdoIA1ggrHnhepg1Bo2FkTzw1NEBnzhV1o4ij5SMr4jlfAgKAa3m-ERGIo2waKsbolw_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=27298"},{"id":10669,"title":"CHELSEAMAEVA_NEIGE EYANG MBA","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/CE-4ECDC9-w40h40.png?Expires=1689678194&Signature=dztrw4yRS5At780-uMk55GecpvVrBSvKBvpiihxtefJpkw2ha5XPNMjW-LNed7QYSL6ekUR5SBWVr10ZpUQWFr2YGYI6TfNa6m~WeV0sk9zqCxbi2N9fYs~o~VttUDR-3c654Fc-F4en4QdHO0ln1MhKiEPSfdtu1STgnyNkIJ4_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=10669"},{"id":13426,"title":"Hind Babaaia","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/HB-4ECDC9-w40h40.png?Expires=1689678194&Signature=iJA53zp86dEg1Qu~~IUQZ-zF~YNtiE2p-TA5IbmyoYYJbMm2GI6Dop7nPKiVpSrQXlKzJburBeq~Cu7WmCKLxAlogX82FGJRD-O-dplk8M8-xSdS2gxLgRo1AZcZDKad15tTU8CFJKqeVVsVP3cVFJBfBFyOoPEKSBid4-Trxas_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=13426"},{"id":27123,"title":"RIM DMINI","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/RD-4ECDC9-w40h40.png?Expires=1689678194&Signature=sitwaNGKXIM5wAnYnH7Ux8oR7IsQKc9F1RXs~SoTs~NMa5mramohSb0Qej9fQmVifFeWL7QzS7vbIToTCxwCZItxcNsDut27XD5QL7wfnxFf2guW~c2ERYkv9MaSiQvZFLKeUYb~ljsQ5zT042EJsjQy3VLsDjOUwjBG6EHY2~c_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=27123"},{"id":13428,"title":"Hiba Khoudar","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/HK-68C9E1-w40h40.png?Expires=1689678194&Signature=Oi6WbDPn~uPC3jDaqPBA3hj1mpz8oSXNw6W4oZja1F4-9XgQot5TTF9fu4AoGkCz1K7NfN1U~m92Db4jZD0Yd1i~zd5J4EhQ1VocGM9ZxRZdiYSVPUJicIMUu9mPotf-MIoDChbZsFds0mHMWEnurbrhcamx7Oa8YQKtUDWG1oc_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=13428"},{"id":13424,"title":"Abdelghafar Legmas","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/AL-FFA59B-w40h40.png?Expires=1689678194&Signature=UQrIVh5xZAmtonSrY1VLwGhmRQIxkasfoj-UUxJ7RCvJK6~gQrAUlafUBkOufVGW9rk~uPnL-3ZWd6BVxk1Ws-CO38lqhIguQiDAeXaOrvjF61nLF56UleDjJ--H-dwsAI9KD6c10f9i~arUVI6bskZfkdnV9x~XUMSaWMt3I2A_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=13424"},{"id":27087,"title":"NIZAR BEKICH","picture":"https:\/\/ckls-cdn-eu.crossknowledge.com\/user\/thumbnail\/default\/NB-4ECDC9-w40h40.png?Expires=1689678194&Signature=Tn4ww5r7w0N23-ijLQN2zDCsfR58WnAROAmIRgcxK5VCOjLJDT8DX~WTSd8iUe9gJR914MebLnj4Zd3ACbM-tmPsdFRehQCP0am9s0JBGfPPo6rdA8guwAtvzBadhpCQO-APHvjuURoiWEAvwhMzfuqGgdFuw9Oe8dSFviHk6HE_&Key-Pair-Id=APKAJJHIVLPNTIQTXE3Q","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/trainee_record.php?candidate_id=27087"}]},{"type":"learning_objects","title":"Contenus","emptyMessage":"Aucun contenu p\u00e9dagogique trouv\u00e9","items":[{"id":403,"title":"Valider son questionnement cr\u00e9atif","type":"Action Tips The Team","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/resource_record.php?lo_version_id=403"},{"id":931,"title":"Adopter le design thinking","type":"Video Faculty","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/resource_record.php?lo_version_id=931"},{"id":1457,"title":"Se poser les bonnes questions cr\u00e9atives","type":"Session The Team","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/resource_record.php?lo_version_id=1457"},{"id":1562,"title":"Communiquer entre g\u00e9n\u00e9rations","type":"Session The Team","href":"https:\/\/honoris-onlineacademy.eu.crossknowledge.com\/resource_record.php?lo_version_id=1562"}]}]}, searchTypes: [{"label":"Apprenants","value":"learners"},{"label":"Contenus","value":"learning_objects"},{"label":"Sessions","value":"sessions"},{"label":"Formations","value":"training_courses"}]});
+	});
+
+</script>                <div class="side-block">
+					<div class="side-separator"></div>
+					<div id="side-search-form" data-direct-reports-ready="false"></div>
+					<div class="side-separator"></div>
+				</div>
+				<div class="side-block">
+					<div id="side-btn-container">
+						<a href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php" target="_blank" class="side-btn side-btn-help"><div class="side-btn-text">Guide utilisateur</div></a><a href="https://www.linkedin.com/groups/3785093" target="_blank" class="side-btn side-btn-thinkTank"><div class="side-btn-text">Think Tank</div></a>					</div>
+				</div>
+            </td>
+            <td class="content-cell">
+                <!-- content LMS -->
+                <div class="content">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                        <tr>
+                            <td valign="top" >
+                                <table height="100%" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" id="maintable_parent">
+                                            <table id="maintable" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td id="contentid" valign="top">
+                                                        <table id="content_table" border="0" width="100%" height="450" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td valign="top">
+                                                                    <div style="position: relative;">
+    <p class="MiniUserGuide-button">
+        <a href="javascript:void(0);" class="js-miniUserGuideButton">
+            Aide contextuelle <i class="MiniUserGuide-icon fa fa-question-circle" aria-hidden="true"></i>
+        </a>
+    </p>
+</div>
+<div style="display: none" class="MiniUserGuide-content js-miniUserGuideContent">
+    <h2><span class="mw-headline" id="Pour_quelle_utilisation.3F">Pour quelle utilisation?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=1" title="Modifier la section : Pour quelle utilisation?">modifier</a><span class="mw-editsection-bracket">]</span></span></h2><hr>
+<p>Avoir une vue globale et rapide de l'activité de la plateforme.
+</p>
+<h2><span class="mw-headline" id="Points_cl.C3.A9s">Points clés</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=2" title="Modifier la section : Points clés">modifier</a><span class="mw-editsection-bracket">]</span></span></h2><hr>
+<h3><span class="mw-headline" id="Tableau_de_bord">Tableau de bord</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=3" title="Modifier la section : Tableau de bord">modifier</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Sélectionner la période et le groupe d'apprenants.
+</p>
+<h3><span class="mw-headline" id="Chiffres-cl.C3.A9s">Chiffres-clés</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=4" title="Modifier la section : Chiffres-clés">modifier</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ckls141_fr/Fichier:Figures_definition.png" class="image"><img alt="Figures definition.png" target="_blank" src="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/images/thumb/9/90/Figures_definition.png/400px-Figures_definition.png" width="400" height="221" srcset="/ug_ckls141_fr/images/thumb/9/90/Figures_definition.png/600px-Figures_definition.png 1.5x, /ug_ckls141_fr/images/thumb/9/90/Figures_definition.png/800px-Figures_definition.png 2x" /></a>
+</p>
+<ul>
+<li><p>Le 1er bloc affiche des indicateurs sur les apprenants.
+</p></li>
+</ul>
+<dl>
+<dd><ul>
+<li><p><i>Apprenants de la plateforme</i> et <i>Apprenants inscrits à une formation</i>&#160;: ces valeurs sont un état à la date du jour.
+</p></li>
+<li><p><i>Apprenants connectés</i> et <i>Apprenants formés</i>&#160;: ces valeurs sont calculées sur la période définie précédemment dans le <b>Tableau de bord</b>.
+</p></li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li><p>Le 2ème bloc affiche des indicateurs globaux.
+</p></li>
+</ul>
+<ul>
+<li><p>Le 3ème bloc affiche des indicateurs sur les formations (les valeurs représentent un état à la date du jour). 
+</p></li>
+</ul>
+<h3><span class="mw-headline" id="Vue_chronologique">Vue chronologique</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=5" title="Modifier la section : Vue chronologique">modifier</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Cliquer sur un des 3 blocs pour afficher une vue chronologique des indicateurs sur la période sélectionnée.
+</p><p>L'intervalle de temps maximal affiché est de 12 mois.
+</p><p>Si une période supérieure à 12 mois est sélectionnée dans le <b>Tableau de bord</b>, la vue affiche les 12 derniers mois de cette période.
+</p>
+<h3><span class="mw-headline" id="Intervalle_d.27affichage_des_valeurs">Intervalle d'affichage des valeurs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=6" title="Modifier la section : Intervalle d'affichage des valeurs">modifier</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><p>Pour une vue sur 1 mois, les valeurs quotidiennes sont affichées.
+</p></li>
+</ul>
+<dl>
+<dd><dl>
+<dd><i>Exemple&#160;:</i><br /><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ckls141_fr/Fichier:Analyse_WS_Chronological_daily.png" class="image"><img alt="Analyse WS Chronological daily.png" target="_blank" src="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/images/thumb/e/e4/Analyse_WS_Chronological_daily.png/400px-Analyse_WS_Chronological_daily.png" width="400" height="160" srcset="/ug_ckls141_fr/images/thumb/e/e4/Analyse_WS_Chronological_daily.png/600px-Analyse_WS_Chronological_daily.png 1.5x, /ug_ckls141_fr/images/thumb/e/e4/Analyse_WS_Chronological_daily.png/800px-Analyse_WS_Chronological_daily.png 2x" /></a><br /><i>Chaque point du graphe représente la valeur sur 1 jour. En survolant un point, une petite fenêtre avec plus de détails s'ouvre.</i>
+</dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li><p>Pour une vue sur une période supérieure à 1 mois et inférieure à 6 mois, les valeurs hebdomadaires sont affichées (le numéro de la semaine n'est pas indiqué).
+</p></li>
+</ul>
+<dl>
+<dd><dl>
+<dd><i>Exemple 1&#160;:</i><br /><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ckls141_fr/Fichier:Analyse_WS_Chronological_weekly_2_months.png" class="image"><img alt="Analyse WS Chronological weekly 2 months.png" target="_blank" src="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/images/thumb/1/10/Analyse_WS_Chronological_weekly_2_months.png/400px-Analyse_WS_Chronological_weekly_2_months.png" width="400" height="160" srcset="/ug_ckls141_fr/images/thumb/1/10/Analyse_WS_Chronological_weekly_2_months.png/600px-Analyse_WS_Chronological_weekly_2_months.png 1.5x, /ug_ckls141_fr/images/thumb/1/10/Analyse_WS_Chronological_weekly_2_months.png/800px-Analyse_WS_Chronological_weekly_2_months.png 2x" /></a>
+</dd>
+<dd><i>Exemple 2&#160;:</i><br /><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ckls141_fr/Fichier:Analyse_WS_Chronological_weekly_4_months.png" class="image"><img alt="Analyse WS Chronological weekly 4 months.png" target="_blank" src="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/images/thumb/d/d9/Analyse_WS_Chronological_weekly_4_months.png/400px-Analyse_WS_Chronological_weekly_4_months.png" width="400" height="160" srcset="/ug_ckls141_fr/images/thumb/d/d9/Analyse_WS_Chronological_weekly_4_months.png/600px-Analyse_WS_Chronological_weekly_4_months.png 1.5x, /ug_ckls141_fr/images/thumb/d/d9/Analyse_WS_Chronological_weekly_4_months.png/800px-Analyse_WS_Chronological_weekly_4_months.png 2x" /></a>
+</dd>
+<dd><i>Chaque point du graphe représente la valeur sur 1 semaine.</i>
+</dd>
+<dd><i>Dans le 1er exemple, la semaine est identifiée par la date de son 1er jour (Lundi 25 Fevrier).</i>
+</dd>
+<dd><i>Dans le 2ème exemple (période plus grande), seul le mois est indiqué et la semaine est déduite de sa position dans le mois.</i>
+</dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li><p>Pour une vue sur une période supérieure à 6 mois, les valeurs mensuelles sont affichées.
+</p></li>
+</ul>
+<dl>
+<dd><dl>
+<dd><i>Exemple&#160;:</i><br /><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ckls141_fr/Fichier:Analyse_WS_Chronological_monthly.png" class="image"><img alt="Analyse WS Chronological monthly.png" target="_blank" src="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/images/thumb/b/bb/Analyse_WS_Chronological_monthly.png/400px-Analyse_WS_Chronological_monthly.png" width="400" height="160" srcset="/ug_ckls141_fr/images/thumb/b/bb/Analyse_WS_Chronological_monthly.png/600px-Analyse_WS_Chronological_monthly.png 1.5x, /ug_ckls141_fr/images/thumb/b/bb/Analyse_WS_Chronological_monthly.png/800px-Analyse_WS_Chronological_monthly.png 2x" /></a><br /><i>Chaque point du graphe représente la valeur sur 1 mois.</i>
+</dd>
+</dl>
+</dd>
+</dl>
+<h3><span class="mw-headline" id="TOP5_des_contenus_et_des_formations">TOP5 des contenus et des formations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=7" title="Modifier la section : TOP5 des contenus et des formations">modifier</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Fournit une vue générale des contenus les plus vus et des formations les plus actives.
+</p>
+<h3><span class="mw-headline" id="Programmes_suivis">Programmes suivis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=8" title="Modifier la section : Programmes suivis">modifier</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Sélectionner jusqu'à 3 formations différentes à suivre.
+</p><p><br />
+<span style="background-color: #ffffff; color:#868686;"><img alt="Main grey.png" target="_blank" src="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/images/2/28/Main_grey.png" width="32" height="22" /> <b>Les formations sont triées par catégorie (100% distanciel, Blendedˣ, SCORM, Formation tutorée, Learning Channel, etc…), puis par ordre alphabétique dans chaque catégorie.<br />Pour chaque formation, accéder au statut des apprenants, l'activité de la formation au cours des mois, le temps passé.</b>&#160; </span>
+</p>
+<h2><span class="mw-headline" id="Astuces_utiles">Astuces utiles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ug_ckls141_fr/index.php?title=Cat%C3%A9gorie:BO_dashboard&amp;action=edit&amp;section=9" title="Modifier la section : Astuces utiles">modifier</a><span class="mw-editsection-bracket">]</span></span></h2><hr>
+<ul>
+<li><p>Par défaut, le tableau de bord présente l'activité de tous les apprenants durant le dernier mois.
+</p></li>
+<li><p>La plus grande période affichée dans la vue chronologique est de 12 mois (les 12 derniers mois).
+</p></li>
+</ul>
+<!-- 
+NewPP limit report
+CPU time usage: 0.027 seconds
+Real time usage: 0.035 seconds
+Preprocessor visited node count: 78/1000000
+Preprocessor generated node count: 256/1000000
+Post‐expand include size: 983/2097152 bytes
+Template argument size: 397/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+-->
+
+    <div class="MiniUserGuide-link">
+        <a target="_blank" href="https://honoris-onlineacademy.eu.crossknowledge.com/userguide/redirect.php?url=https://userguide.crossknowledge.com/ckls141_fr/Category:BO_dashboard">
+                        Informations complémentaires dans le guide utilisateur
+        </a>
+    </div>
+</div><div id="ajaxNotificationsHolder" style="display:none"></div>    <h1 id="dashboard-title"> Tableau de bord</h1>
+<div id="Dashboard_6BB15C9E-70E9-49BA-A2BB-7269E994C89E" class="inlineBlock parentDashboard"><script type="text/javascript" language="JavaScript">
+  if (typeof changeNbRowsPerPageAndReload == 'undefined')
+    changeNbRowsPerPageAndReload = function(theSelect, new_url, anchor)
+    {
+      var theNewValue = theSelect.options[theSelect.selectedIndex].value;
+      var today = new Date();
+      var expire = new Date();
+      var nDays = 350;
+      expire.setTime(today.getTime() + 3600000*24*nDays);
+      document.cookie = "workspacesdesign_admindashboardphp_" + theSelect.name + "="+escape(theNewValue)
+                   + ";expires="+expire.toGMTString();
+      new_url += '&' + theSelect.name + '=' + theNewValue;
+      if (anchor != '')
+        new_url += '#' + anchor;
+      window.location.href = new_url;
+    }
+</script>
+		<iframe src="https://honoris-onlineacademy.eu.crossknowledge.com/includes/epitools/blank.html" id="RSIFrame" name="RSIFrame" style="border : 0; margin : 0px; height : 0px; width : 0px;float:left"></iframe>
+		<script type="text/javascript">
+
+			themeManager.renderTooltips();
+
+			var IFrameObj; // our IFrame object
+			var LoadedTableTooltips = new Array();
+
+			function callToServerPost(FormID, url)
+			{
+				var oldAction = $(FormID).action;
+				var oldMethod = $(FormID).method;
+				var oldTarget = $(FormID).target;
+
+				callToServer('https://honoris-onlineacademy.eu.crossknowledge.com/includes/epitools/blank.html');
+
+				$(FormID).action = url;
+				$(FormID).method = "POST";
+				$(FormID).target = "RSIFrame";
+
+				$(FormID).submit();
+
+				$(FormID).action = oldAction;
+				$(FormID).method = oldMethod;
+				$(FormID).target = oldTarget;
+
+				return false;
+			}
+
+			function callToServer(URL)
+			{
+			  if (!document.createElement) {return true;}
+			  var IFrameDoc;
+			  var IFrameObj = $('RSIFrame');
+
+			  if (navigator.userAgent.indexOf('Gecko') !=-1 && !IFrameObj.contentDocument) {
+			    // we have to give NS6 a fraction of a second
+			    // to recognize the new IFrame
+			    setTimeout('callToServer(URL)',10);
+			    return false;
+			  }
+
+			  if (IFrameObj.contentDocument) {
+			    // For NS6
+			    IFrameDoc = IFrameObj.contentDocument;
+			  } else if (IFrameObj.contentWindow) {
+			    // For IE5.5 and IE6
+			    IFrameDoc = IFrameObj.contentWindow.document;
+			  } else if (IFrameObj.document) {
+			    // For IE5
+			    IFrameDoc = IFrameObj.document;
+			  } else {
+			    return true;
+			  }
+
+			  IFrameDoc.location.replace(URL);
+			  return false;
+			}
+
+			// Multiselect functions
+
+			var tableAllSelected = {};
+			var tableResultCount = {};
+			var tableSelectedItemsCount = {};
+
+			function selectAllItemsOnPage(multiselectUid, check)
+			{
+				disableButtons(multiselectUid);
+				$('multiselectTable_'+multiselectUid).fire("multiselect:change", {multiselectUid: multiselectUid});
+
+				var allCheckboxes = $$('DIV#multiselectTable_'+multiselectUid+' INPUT.multiselectCheckbox');
+
+				tableAllSelected[multiselectUid] = false;
+
+				var params = {};
+				params['method']          = 'selectItems';
+				params['multiselectUid']  = multiselectUid;
+
+				allCheckboxes.each(function (e) {
+					e.checked  = check;
+					e.disabled = false;
+					params['selectedItemIds['+e.value+']'] = check;
+				});
+
+				new Ajax.Request('https://honoris-onlineacademy.eu.crossknowledge.com/includes/epitools/epiObject_xmlrpc.php', {
+				                 method: "post",
+				                 parameters: params,
+				                 onSuccess: function(originalRequest, json) {
+	                             	if (json && json.Return == "Success")
+		                             	updateCheckedItems(multiselectUid, json.selectedItemCount);
+	                             	else
+		                             	alert('Une erreur est survenue. Veuillez réessayer.');
+
+                                    if (json.selectedItemCount > 0) {
+                                        enableButtons(multiselectUid);
+                                    }
+	                             }
+				});
+			}
+
+			function updateCheckedItems(multiselectUid, number, noHighlight)
+			{
+				var matchingItems = 0;
+
+				if (typeof number == 'undefined')
+					number = tableResultCount[multiselectUid];
+
+				matchingItems =  tableResultCount[multiselectUid];
+
+				tableSelectedItemsCount[multiselectUid] = number;
+
+				if (number > 1)
+					var msgCheckedItems    = tableMultiselectMsg[multiselectUid]['selected_items_count'];
+				else
+					var msgCheckedItems    = tableMultiselectMsg[multiselectUid]['selected_item_count'];
+
+				if (matchingItems > 1)
+				{
+					var msgAllCheckedItems = tableMultiselectMsg[multiselectUid]['all_items_result_set_selected'];
+					var msgCheckAllItems   = tableMultiselectMsg[multiselectUid]['check_items_result_set'];
+				}
+				else
+				{
+					var msgAllCheckedItems = tableMultiselectMsg[multiselectUid]['unique_item_result_set_selected'];
+					var msgCheckAllItems   = tableMultiselectMsg[multiselectUid]['check_unique_item_result_set'];
+				}
+
+				var endColor = '#ffffff';
+				if (tableAllSelected[multiselectUid])
+				{
+					var strMessage = msgAllCheckedItems.replace('%d', tableResultCount[multiselectUid]);
+
+					var selectAllItemsLabel = '&nbsp;/&nbsp;<a href="javascript:selectAllItems(\''+multiselectUid+'\', false)">';
+					selectAllItemsLabel += 'Effacer la sélection';
+					selectAllItemsLabel += '</a>';
+
+					endColor = '#ccf6ca';
+				}
+				else
+				{
+					var strMessage = msgCheckedItems.replace('%d', number);
+					var selectAllItemsLabel = '&nbsp;/&nbsp;<a href="javascript:selectAllItems(\''+multiselectUid+'\', true)">';
+					selectAllItemsLabel += msgCheckAllItems.replace('%d', tableResultCount[multiselectUid]);
+					selectAllItemsLabel += '</a>';
+
+					if (number > 0)
+						endColor = '#ccf6ca';
+				}
+
+				// Update the "Check all %d items of the result set" label
+				var selectAllItemsLabelElement = $('selectAllItemsLabel_'+multiselectUid);
+				if (selectAllItemsLabelElement)
+					  selectAllItemsLabelElement.innerHTML = selectAllItemsLabel;
+
+				// Update the "%d items selected" block, this element is always displayed even if there are no search result
+				$('msgNumSelectedItems_'+multiselectUid).innerHTML = strMessage;
+
+				$('multiselectTable_'+multiselectUid).fire("multiselect:update", {multiselectUid: multiselectUid, selectedItemsCount: number});
+
+                if (number === 0) {
+                    disableButtons(multiselectUid);
+                }
+			}
+
+			/**
+			 * Enable all input type=submit" button
+			 */
+			function enableButtons(multiselectUid)
+			{
+				// Retrieve the parent form
+				var theForm = $('msgNumSelectedItems_'+multiselectUid).up('form');
+				if (theForm)
+				{
+					theForm.select('INPUT[type="submit"]').each(function (e) {
+						if (e.disabled)
+							e.disabled = false;
+					});
+					theForm.select('INPUT[type="button"]').each(function (e) {
+						if (e.disabled)
+							e.disabled = false;
+					});
+					theForm.select('BUTTON').each(function (e) {
+						if (e.disabled)
+							e.disabled = false;
+					});
+				}
+			}
+
+			/**
+			 * Disable all input type=submit" button
+			 */
+			function disableButtons(multiselectUid)
+			{
+				// Retrieve the parent form
+				var theForm = $('msgNumSelectedItems_'+multiselectUid).up('form');
+				if (theForm)
+				{
+					theForm.select('INPUT[type="submit"]').each(function (e) {
+						if (!e.disabled)
+							e.disabled = true;
+					});
+					theForm.select('INPUT[type="button"]').each(function (e) {
+						if (!e.disabled)
+							e.disabled = true;
+					});
+					theForm.select('BUTTON').each(function (e) {
+						if (!e.disabled)
+							e.disabled = true;
+					});
+				}
+			}
+
+
+			function selectAllItems(multiselectUid, check)
+			{
+				disableButtons(multiselectUid);
+				$('multiselectTable_'+multiselectUid).fire("multiselect:change", {multiselectUid: multiselectUid});
+
+				var allCheckboxes = $$('DIV#multiselectTable_'+multiselectUid+' INPUT.multiselectCheckbox');
+
+				tableAllSelected[multiselectUid] = check;
+
+				allCheckboxes.each(function (e) {
+					e.checked  = check;
+					e.disabled = true;
+				});
+
+				var params = {};
+				params['method']         = 'selectAllItems';
+				params['selectAll']      = check;
+				params['multiselectUid'] = multiselectUid;
+
+				new Ajax.Request('https://honoris-onlineacademy.eu.crossknowledge.com/includes/epitools/epiObject_xmlrpc.php', {
+					method: "post",
+					parameters: params,
+					onComplete: function(){
+					},
+					onSuccess: function(originalRequest, json) {
+						if (json && json.Return == "Success")
+						{
+							if (check) {
+								updateCheckedItems(multiselectUid);
+						        enableButtons(multiselectUid);
+                            }
+							else
+							{
+								allCheckboxes.each(function (e) {
+								e.checked = false;
+								e.disabled = false;});
+								updateCheckedItems(multiselectUid, 0);
+							}
+						}
+						else
+							alert('Une erreur est survenue. Veuillez réessayer.');
+					}
+				});
+	    	}
+
+			function selectItems(multiselectUid, checkbox)
+			{
+				disableButtons(multiselectUid);
+				$('multiselectTable_'+multiselectUid).fire("multiselect:change", {multiselectUid: multiselectUid});
+
+				var checkbox = $(checkbox);
+
+				var params = {};
+				params['method']					= 'selectItems';
+				params['multiselectUid']	= multiselectUid;
+
+				$$('#multiselectTable_'+multiselectUid + ' .multiselectCheckbox').each(function(checkbox) {
+					params['selectedItemIds['+checkbox.value+']'] = checkbox.checked;
+				});
+
+				new Ajax.Request('https://honoris-onlineacademy.eu.crossknowledge.com/includes/epitools/epiObject_xmlrpc.php', {
+					method: "post",
+					parameters: params,
+					onSuccess: function(originalRequest, json) {
+						if (json && json.Return == "Success")
+							updateCheckedItems(multiselectUid, json.selectedItemCount);
+
+						if (json.selectedItemCount > 0) {
+                            enableButtons(multiselectUid);
+                        }
+					}
+				});
+			}
+
+
+		</script>
+		<script type="text/javascript" language="JavaScript">
+<!--
+var RelativePath       = 'https://honoris-onlineacademy.eu.crossknowledge.com/';
+var LoadDashletTimeout = 5000;
+
+function updateDashlet(callingObject, queryString)
+{
+	// No parameter : fail
+	if (!callingObject)
+		return false;
+
+	// The form POST that will be used to populate the POST data
+	var theForm = false;
+
+	// The calling object is a form : use it to populate the POST data
+	if ($(callingObject) && ($(callingObject).tagName == 'FORM'))
+		theForm = $(callingObject);
+
+	// callingObject is a valid object : just use it
+	if ($(callingObject))
+		callingObject = $(callingObject);
+	// callingObject is an instance GUID, try to find the dashlet it belongs to
+	else if (typeof(callingObject) == 'string' && $('Dashlet_'+callingObject+'_Content'))
+		callingObject =  $('Dashlet_'+callingObject+'_Content');
+	// Invalid object : fail
+	else
+		return false;
+
+	// The dashlet div containing everything
+
+	if (callingObject.hasClassName('EASDashlet'))
+		var dashletDiv = callingObject;
+	else
+		var dashletDiv = callingObject.up('.EASDashlet');
+
+	// The instance GUID
+	var guid = dashletDiv.id.substr(8);
+
+	// The container that will be updated by the AJAX call
+	var containerDiv = $('Dashlet_'+guid+'_Content');
+
+	// Get the instance's AJAX call parameters
+	var dashletOnComplete = $('Dashlet_'+guid+'_Params').onComplete.value;
+	var dashletOnSuccess  = $('Dashlet_'+guid+'_Params').onSuccess.value;
+	var dashletOnFailure  = $('Dashlet_'+guid+'_Params').onFailure.value;
+	var dashletGUID       = $('Dashlet_'+guid+'_Params').DashletGUID.value;
+
+	var candidate_id 			= 0;
+	var include_failed 		= 0;
+
+	var dashletPostForm  = $('Dashlet_'+guid+'_Post');
+
+	// Default AJAX call parameters
+	var updaterParams = { onComplete: function() { dashletOnCompleteAction() }};
+
+	// Get instance's options
+	if ($('Dashlet_'+guid+'_Options'))
+		updaterParams['parameters'] = $H($('Dashlet_'+guid+'_Options').serialize(true));
+	else
+		updaterParams['parameters'] = new Hash();
+
+	// Retreive POST data from the instance's POST handler form
+	if (dashletPostForm)
+		updaterParams['parameters'] = updaterParams['parameters'].merge(dashletPostForm.serialize(true));
+
+	// Retreive parameters using the form passed in parameter
+	if (theForm)
+		updaterParams['parameters'] = updaterParams['parameters'].merge(theForm.serialize(true));
+
+	if (queryString)
+	{
+		if (typeof(queryString) == 'string')
+		{
+			queryString = new String(queryString);
+			updaterParams['parameters'] = updaterParams['parameters'].merge($H(queryString.toQueryParams()));
+		}
+		else if (typeof(queryString) == 'object')
+			updaterParams['parameters'] = updaterParams['parameters'].merge($H(queryString));
+	}
+
+	// Prepare AJAX Call
+	if (dashletOnSuccess)
+		updaterParams['onSuccess'] = eval(dashletOnSuccess);
+
+	if (dashletOnFailure)
+		updaterParams['onFailure'] = eval(dashletOnFailure);
+
+	dashletDiv.down('.DashletSpinner').style.height = containerDiv.getHeight()+'px';
+	dashletDiv.down('.DashletSpinner').style.width  = containerDiv.getWidth()+'px';
+	dashletDiv.down('.DashletSpinner').style.display = '';
+
+	var ajaxParameters = 'DashletGuid=' + dashletGUID + '&InstanceGuid=' + guid;
+	if(candidate_id != 0)
+		ajaxParameters += '&candidat_id=' + candidate_id;
+
+	if(include_failed != 0)
+		ajaxParameters += '&failed=1';
+
+    let ajaxURL = 'https://honoris-onlineacademy.eu.crossknowledge.com/dashlets_xmlrpc.php?' + ajaxParameters;
+
+	// if the dashlet is "Key Figures" the query must be interrupted if takes too long
+	if(dashletGUID === 'E8EBA8AF-A96A-4B62-A594-D4D897403FAD') {
+	  loadOrCacheDashlet();
+    } else {
+      loadDashlet();
+    }
+
+    function loadDashlet() {
+      new Ajax.Updater(containerDiv, ajaxURL, updaterParams);
+    }
+
+    function loadOrCacheDashlet(timeout) {
+        new Ajax.Updater(containerDiv, ajaxURL + '&cache=1', updaterParams);
+    }
+
+    function dashletOnCompleteAction() {
+    dashletDiv.down('.DashletSpinner').style.display = 'none';
+    dashletDiv.fire("dashlet:loaded");
+    themeManager.renderTooltips();
+    if (dashletOnComplete)
+      eval(dashletOnComplete)(guid);
+    }
+}
+
+function SetDashletPostValue(callingLink, fieldname, value)
+{
+	if ($(callingLink).hasClassName('EASDashlet'))
+		var dashletDiv = $(callingLink);
+	else
+		var dashletDiv = $(callingLink).up('.EASDashlet');
+
+	var guid = dashletDiv.id.substr(8);
+
+	SetDashletFormValue(guid, fieldname, value);
+}
+
+
+function SetDashletFormValue(guid, fieldname, value)
+{
+	var form = $('Dashlet_'+ guid +'_Post');
+
+	// INPUT doesn't exist : create it
+	if (!form[fieldname])
+	{
+		var input = new Element('input', {type: 'hidden', name : fieldname, value: value});
+		form.appendChild(input);
+	}
+	else
+		form[fieldname].value = value;
+}
+
+function GetDashletForm(guid)
+{
+	return $('Dashlet_'+ guid +'_Post');
+}
+
+//-->
+</script>
+<div class="EASDashlet DashletFullWidth" style="" id="Dashlet_E8EBA8AF-A96A-4B62-A594-D4D897403FAD">  <form id="Dashlet_E8EBA8AF-A96A-4B62-A594-D4D897403FAD_Params" style="padding: 0px; margin: 0px;">    <input type="hidden" name="DashletGUID"         value="E8EBA8AF-A96A-4B62-A594-D4D897403FAD">    <input type="hidden" name="onSuccess"           value="">    <input type="hidden" name="onComplete"          value="">    <input type="hidden" name="onFailure"           value="">  </form>  <div class="EASDashletTitle" >Chiffres-clés</div>  <div>    <div class="DashletSpinner" style="position : absolute"></div>    <div class="EASDashletContent" id="Dashlet_E8EBA8AF-A96A-4B62-A594-D4D897403FAD_Content">      <div style="height : 200px;"></div>  <form id="Dashlet_E8EBA8AF-A96A-4B62-A594-D4D897403FAD_Options" style="padding: 0px; margin: 0px;"><input type="hidden" name="dashboardGUID" value="6BB15C9E-70E9-49BA-A2BB-7269E994C89E" />  </form>  <form id="Dashlet_E8EBA8AF-A96A-4B62-A594-D4D897403FAD_Post" style="padding: 0px; margin: 0px;">  </form>    </div>  </div>
+		<script type="text/javascript" language="JavaScript">
+		<!--
+			Event.observe(window, 'load', function()
+			{
+				updateDashlet('E8EBA8AF-A96A-4B62-A594-D4D897403FAD');
+			});
+		//-->
+		</script>
+
+		</div>
+
+		<script>
+			Event.observe(window, 'load', function()
+			{
+				$('Dashlet_E8EBA8AF-A96A-4B62-A594-D4D897403FAD').observe('dashlet:loaded', function(){
+				    if($('training-time-chart') !== null) {
+                        TrainingTimePie.draw();
+                    }
+				});
+			});
+		</script>
+		<div class="EASDashlet DashletFullWidth" style="" id="Dashlet_65C21626-922C-4FF2-8FD8-B6BE0822EAEC">  <form id="Dashlet_65C21626-922C-4FF2-8FD8-B6BE0822EAEC_Params" style="padding: 0px; margin: 0px;">    <input type="hidden" name="DashletGUID"         value="0A5BFA0B-40C2-44A7-9675-4240F4B1FA60">    <input type="hidden" name="onSuccess"           value="">    <input type="hidden" name="onComplete"          value="">    <input type="hidden" name="onFailure"           value="">  </form>  <div class="EASDashletTitle" >Activité de la plateforme</div>  <div>    <div class="DashletSpinner" style="position : absolute"></div>    <div class="EASDashletContent" id="Dashlet_65C21626-922C-4FF2-8FD8-B6BE0822EAEC_Content">      <div style="height : 200px;"></div>  <form id="Dashlet_65C21626-922C-4FF2-8FD8-B6BE0822EAEC_Options" style="padding: 0px; margin: 0px;"><input type="hidden" name="dashboardGUID" value="6BB15C9E-70E9-49BA-A2BB-7269E994C89E" />  </form>  <form id="Dashlet_65C21626-922C-4FF2-8FD8-B6BE0822EAEC_Post" style="padding: 0px; margin: 0px;">  </form>    </div>  </div>
+		<script type="text/javascript" language="JavaScript">
+		<!--
+			Event.observe(window, 'load', function()
+			{
+				updateDashlet('65C21626-922C-4FF2-8FD8-B6BE0822EAEC');
+			});
+		//-->
+		</script>
+
+		</div>
+			<script type="text/javascript">
+			function sessionActivitySetDate(element)
+			{
+				var activityForm = document.forms.SessionActivity;
+				if (activityForm)
+				{
+					activityForm.date.value = element.getAttribute('data');
+					if (activityForm.fromDate)
+						activityForm.fromDate.value = '';
+				}
+			}
+
+			Ext.query("body")[0].on("click", ".histogram-change-date", function(event){
+				changeDate(event);
+				event.preventDefault();
+			});
+
+			Ext.query("body")[0].on("click", ".main-histogram-change-date", function(event){
+				mainChangeDate(event);
+				event.preventDefault();
+			});
+
+			function changeDate(event) {
+				var domChangeDateButton = event.target;
+				var newDate = domChangeDateButton.getAttribute("data");
+				var dashletForm = Ext.get(domChangeDateButton).parent("form");
+				if (dashletForm)
+				{
+					dashletForm.query("[name='JulianDay']")[0].setValue(newDate);
+					if ('updateDashlet' in window)
+					{
+						updateDashlet(dashletForm.dom);
+					}
+				}
+			}
+
+			function mainChangeDate(event) {
+				var domChangeDateButton = event.target;
+				var newDate = domChangeDateButton.getAttribute("data");
+				var dashletForm = Ext.get("main-histogram");
+				if (dashletForm)
+				{
+					dashletForm.query("[name='date']")[0].setValue(newDate);
+					if  ('updateDashlet' in window)
+					{
+						updateDashlet(dashletForm.dom);
+					}
+					else
+					{
+						dashletForm.dom.submit();
+					}
+				}
+			}
+
+
+			</script>
+		<div class="EASDashlet DashletFullWidth" style="" id="Dashlet_8415073E-726B-E5B8-F2E0-D6B01CBDD8C3">  <form id="Dashlet_8415073E-726B-E5B8-F2E0-D6B01CBDD8C3_Params" style="padding: 0px; margin: 0px;">    <input type="hidden" name="DashletGUID"         value="8415073E-726B-E5B8-F2E0-D6B01CBDD8C3">    <input type="hidden" name="onSuccess"           value="">    <input type="hidden" name="onComplete"          value="">    <input type="hidden" name="onFailure"           value="">  </form>  <div>    <div class="DashletSpinner" style="position : absolute"></div>    <div class="EASDashletContent" id="Dashlet_8415073E-726B-E5B8-F2E0-D6B01CBDD8C3_Content">      <div style="height : 200px;"></div>  <form id="Dashlet_8415073E-726B-E5B8-F2E0-D6B01CBDD8C3_Options" style="padding: 0px; margin: 0px;"><input type="hidden" name="dashboardGUID" value="6BB15C9E-70E9-49BA-A2BB-7269E994C89E" />  </form>  <form id="Dashlet_8415073E-726B-E5B8-F2E0-D6B01CBDD8C3_Post" style="padding: 0px; margin: 0px;">  </form>    </div>  </div>
+		<script type="text/javascript" language="JavaScript">
+		<!--
+			Event.observe(window, 'load', function()
+			{
+				updateDashlet('8415073E-726B-E5B8-F2E0-D6B01CBDD8C3');
+			});
+		//-->
+		</script>
+
+		</div>
+<script type="text/javascript" src="https://ckls-assets.eu.crossknowledge.com/assets/js/BoMiniUserGuide.js?v=88142058a66"></script><script type="text/javascript" src="https://ckls-assets.eu.crossknowledge.com/dashlets/top_five_key_figures/top_five_key_figures.js?v=88142058a66"></script>					<script>
+						Event.observe(window, 'load', function()
+						{
+							$('Dashlet_8415073E-726B-E5B8-F2E0-D6B01CBDD8C3').observe('dashlet:loaded', function(){
+								displayTopFiveKeyFigures();
+							});
+						});
+					</script>
+					<div class="EASDashlet DashletFullWidth TimePerPublisherChart" style="" id="Dashlet_A851CDC5-436B-0B29-F96F-9BA8E366E536">  <form id="Dashlet_A851CDC5-436B-0B29-F96F-9BA8E366E536_Params" style="padding: 0px; margin: 0px;">    <input type="hidden" name="DashletGUID"         value="A851CDC5-436B-0B29-F96F-9BA8E366E536">    <input type="hidden" name="onSuccess"           value="">    <input type="hidden" name="onComplete"          value="">    <input type="hidden" name="onFailure"           value="">  </form>  <div class="EASDashletTitle" >Temps de formation passé par éditeur</div>  <div>    <div class="DashletSpinner" style="position : absolute"></div>    <div class="EASDashletContent" id="Dashlet_A851CDC5-436B-0B29-F96F-9BA8E366E536_Content">      <div style="height : 200px;"></div>  <form id="Dashlet_A851CDC5-436B-0B29-F96F-9BA8E366E536_Options" style="padding: 0px; margin: 0px;"><input type="hidden" name="dashboardGUID" value="6BB15C9E-70E9-49BA-A2BB-7269E994C89E" />  </form>  <form id="Dashlet_A851CDC5-436B-0B29-F96F-9BA8E366E536_Post" style="padding: 0px; margin: 0px;">  </form>    </div>  </div>
+		<script type="text/javascript" language="JavaScript">
+		<!--
+			Event.observe(window, 'load', function()
+			{
+				updateDashlet('A851CDC5-436B-0B29-F96F-9BA8E366E536');
+			});
+		//-->
+		</script>
+
+		</div>
+				<script>
+					Event.observe(window, 'load', function()
+					{
+						$('Dashlet_A851CDC5-436B-0B29-F96F-9BA8E366E536').observe('dashlet:loaded', function(){
+						    if($('training-time-per-user-chart') !== null) {
+                                TrainingTimePerUser.draw();
+                            }
+						});
+					});
+				</script>
+				</div>																                                                                </td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<img src="https://ckls-assets.eu.crossknowledge.com/themes/crossknowledge/default_style/images/spacer.gif?v=88142058a66" width="52" height="1" id="content_spacer" alt="">
+								</td>
+								<!-- End content -->
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+					</table>
+            </td>
+            <td>
+                                    <script type="text/javascript" src="/libs/FCKeditor/fckeditor.js"></script>
+                    <script type="text/javascript" src="/js/fckEditor/fckEditor.js"></script>
+                            </td>
+		</tr>
+        <tr>
+            <td class="footer-spacer"></td>
+            <td class="footer">CKLS [14.1] | CrossKnowledge Learning Suite &copy; <a href="https://www.crossknowledge.com/" target="_blank">CrossKnowledge 2023</a><br>Nombre illimité d'apprenants actifs<br></td>
+            <td class="footer-right"></td>
+        </tr>
+        </tbody>
+        </table>
+	    <link rel="stylesheet" href="https://ckls-assets.eu.crossknowledge.com/assets/css/BoMiniUserGuide.css?v=88142058a66"/>
+
+
+
+
+
+
+
+
+	</body>
+</html>
+<!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+    <script type="text/javascript">
+    (function(){var g=function(e,h,f,g){
+    this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+    this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+    this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+    this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)}};
+    this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+    try{(new g(100,"r","QSI_S_ZN_6XQP8ChzB6liIm1","https://zn6xqp8chzb6liim1-wiley.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_6XQP8ChzB6liIm1")).start()}catch(i){}})();
+    </script><div id="ZN_6XQP8ChzB6liIm1"><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--END WEBSITE FEEDBACK SNIPPET-->
